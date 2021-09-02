@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
-import Background from './background'
-import './frontPage.css'
+import Background from '../background/background'
+import './frontPagestyles.css'
 
 export default class FrontPage extends Component {
     //Separate Contact Me Page?, has phone # and email
