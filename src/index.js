@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FrontPage from './components/frontpage/frontPage';
-import ContactPage from './components/contactpage/contactPage';
+import ContactPage from './components/contact/contactPage';
 import * as serviceWorker from './serviceWorker';
 
 const rootElement = document.getElementById("root");

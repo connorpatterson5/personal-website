@@ -1,0 +1,15 @@
+.contact-button {
+    background-color: #7b4a4b;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.contact-button:hover {
+    background-color: #885c5d;
+}

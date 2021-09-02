@@ -7,6 +7,10 @@
     opacity: 90%;
     text-align: center;
 }
+.font-link {
+    font-family: 'Comic Sans';
+}
+
 
 a.linkedin:visited, a.linkedin:link {
     background-color: #0077b5;
@@ -16,6 +20,7 @@ a.linkedin:visited, a.linkedin:link {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 5px;
     margin: 42px;
 }
 
@@ -31,6 +36,7 @@ a.github:visited, a.github:link {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 5px;
     margin: 42px;
 }
 
@@ -39,20 +45,57 @@ a.github:hover {
 }
 
 a.instagram:visited, a.instagram:link {
-    background-color: #F77737;
+    background: linear-gradient(
+        150deg, 
+        #405DE6, 
+        #5851DB, 
+        #833AB4, 
+        #C13584, 
+        #E1306C, 
+        #FD1D1D,
+        #F56040,
+        #F77737,
+        #FCAF45,
+        #FFDC80);
     color: white;
     border: 2px solid black;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 5px;
     margin: 42px;
 }
 
 a.instagram:hover {
-    background-color: #FCAF45;
+    background: linear-gradient(
+        150deg, 
+        #667deb, 
+        #7974e2, 
+        #9c61c3, 
+        #cd5d9d, 
+        #e75989, 
+        #fd4a4a,
+        #f78066,
+        #f9925f,
+        #fdbf6a,
+        #ffe399);
 }
 
+a.resume:visited, a.resume:link {
+    background-color: #f5e653;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 42px;
+}
 
+a.resume:hover {
+    background-color: #f8ee87;
+}
 
 
