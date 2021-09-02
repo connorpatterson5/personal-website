@@ -1,0 +1,88 @@
+
+.note {
+    background: lightyellow;
+    border: 1px solid yellow;
+    padding: 1rem;
+    border-radius: 10px;
+    opacity: 90%;
+    text-align: center;
+}
+
+.bg {
+    animation:slide 8s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #fcc729 50%, #337def 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:15s;
+}
+
+.bg3 {
+    animation-duration:15s;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-19%);
+    }
+    100% {
+        transform:translateX(19%);
+    }
+}
+
+a.linkedin:visited, a.linkedin:link {
+    background-color: #0077b5;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 42px;
+}
+
+a.linkedin:hover {
+    background-color: #00a0dc;
+}
+
+a.github:visited, a.github:link {
+    background-color: #171515;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 42px;
+}
+
+a.github:hover {
+    background-color: #454444;
+}
+
+a.instagram:visited, a.instagram:link {
+    background-color: #F77737;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 42px;
+}
+
+a.instagram:hover {
+    background-color: #FCAF45;
+}
+
+
+
+
