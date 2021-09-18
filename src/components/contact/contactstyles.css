@@ -12,6 +12,7 @@ li.contact {
 
 a.contact {
   text-decoration: none;
+  font-family: "Nunito Sans";
   position: relative;
   display: block;
   padding: 16px 0;

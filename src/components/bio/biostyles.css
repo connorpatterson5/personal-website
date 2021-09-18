@@ -14,3 +14,8 @@ a.bio:hover {
 a.bio:active {
     text-decoration: none;
 }
+
+p.bio {
+    font-size: 25px;
+    font-family: "Nunito Sans";
+}

@@ -10,6 +10,7 @@
 a.linkedin:visited, a.linkedin:link {
     background-color: #0077b5;
     font-size: 1.5rem;
+    font-family: "Nunito Sans";
     color: white;
     border: 2px solid black;
     padding: 10px 20px;
@@ -27,6 +28,7 @@ a.linkedin:hover {
 a.github:visited, a.github:link {
     background-color: #171515;
     font-size: 1.5rem;
+    font-family: "Nunito Sans";
     color: white;
     border: 2px solid black;
     padding: 10px 20px;
@@ -55,6 +57,7 @@ a.instagram:visited, a.instagram:link {
         #FCAF45,
         #FFDC80);
     font-size: 1.5rem;
+    font-family: "Nunito Sans";
     color: white;
     border: 2px solid black;
     padding: 10px 20px;
@@ -83,6 +86,7 @@ a.instagram:hover {
 a.resume:visited, a.resume:link {
     background-color: #f5e653;
     font-size: 1.5rem;
+    font-family: "Nunito Sans";
     color: black;
     border: 2px solid black;
     padding: 10px 20px;
