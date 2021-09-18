@@ -1,19 +1,15 @@
-
 .note {
     background: lightyellow;
     border: 1px solid yellow;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 10px;
-    opacity: 90%;
+    opacity: 95%;
     text-align: center;
 }
-.font-link {
-    font-family: 'Comic Sans';
-}
-
 
 a.linkedin:visited, a.linkedin:link {
     background-color: #0077b5;
+    font-size: 1.5rem;
     color: white;
     border: 2px solid black;
     padding: 10px 20px;
@@ -30,6 +26,7 @@ a.linkedin:hover {
 
 a.github:visited, a.github:link {
     background-color: #171515;
+    font-size: 1.5rem;
     color: white;
     border: 2px solid black;
     padding: 10px 20px;
@@ -57,6 +54,7 @@ a.instagram:visited, a.instagram:link {
         #F77737,
         #FCAF45,
         #FFDC80);
+    font-size: 1.5rem;
     color: white;
     border: 2px solid black;
     padding: 10px 20px;
@@ -84,6 +82,7 @@ a.instagram:hover {
 
 a.resume:visited, a.resume:link {
     background-color: #f5e653;
+    font-size: 1.5rem;
     color: black;
     border: 2px solid black;
     padding: 10px 20px;

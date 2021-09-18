@@ -1,0 +1,16 @@
+a.bio:link {
+    text-decoration: none;
+}
+
+a.bio:visited {
+    text-decoration: none;
+}
+
+a.bio:hover {
+    color: #8e6faf;
+    text-decoration: none;
+}
+
+a.bio:active {
+    text-decoration: none;
+}

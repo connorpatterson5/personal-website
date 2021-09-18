@@ -1,15 +1,40 @@
-.contact-button {
-    background-color: #7b4a4b;
-    color: white;
-    border: 2px solid black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
-    cursor:pointer;
+
+ol.contact,
+ul.contact {
+  list-style: none;
 }
 
-.contact-button:hover {
-    background-color: #885c5d;
+li.contact {
+  display: inline-block;
+  position: relative;
+  bottom: 0px;
+}
+
+a.contact {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  margin: 0 12px;
+  font-size: 1.5rem;
+  transition: color 0.1s, background-color 0.1s;
+  color: #000;
+}
+a.contact:hover {
+  color: #999999;
+}
+a.contact:focus, a.contact:active {
+  color: #999999;
+}
+
+a.contact:active::before {
+  background-color: #999999;
+}
+
+a.contact:hover::before,
+a.contact:focus::before {
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
