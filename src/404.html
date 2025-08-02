@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/personal-website/" />
+    <script>
+      // For client-side routing fallback
+      var path = window.location.pathname.replace('/personal-website', '');
+      window.location.replace('/personal-website/?redirect=' + encodeURIComponent(path + window.location.search + window.location.hash));
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
