@@ -1,0 +1,73 @@
+{
+  "workExperience": [
+    {
+      "company": "State Farm",
+      "companyUrl": "https://www.statefarm.com/",
+      "title": "Fullstack Software Engineer",
+      "dates": "June 2023 – Present",
+      "bullets": [
+        "Delivering robust <strong>full-stack solutions</strong> using <a routerLink='/techstack' fragment='Angular'><strong>Angular</strong></a> and <a routerLink='/techstack' fragment='Java'><strong>Java</strong></a>, rigorously testing with <a routerLink='/techstack' fragment='CodeceptJS'><strong>Codecept</strong></a> and <a routerLink='/techstack' fragment='Jasmine'><strong>Jasmine</strong></a>, supporting an application used <strong>600,000 times/month</strong>.",
+        "Enhanced <strong>Auto Insurance quoting app</strong>, reducing quote time by <strong>71%</strong> and saving <strong>$3M+</strong> and <strong>110,400 hours annually</strong>.",
+        "Integrated real-time behavioral analytics (<a href='https://formotiv.com/' target='_blank'><strong>ForMotiv</strong></a>) to monitor user/agent interactions and detect bad actors.",
+        "Key contributor to <strong>“Year Make Model BodyStyle”</strong> feature, enabling manual vehicle entry and invalid VINs.",
+        "Optimized <a routerLink='/techstack' fragment='Angular'><strong>Angular</strong></a> compile/hot reload speed by <strong>130%</strong> via environment setup refactor.",
+        "<strong>Mentored two interns</strong>, providing daily structure and guidance.",
+        "Redesigned and launched a new <strong>shared library</strong>, boosting partner collaboration by <strong>40%</strong>.",
+        "Completed internal course: <a routerLink='/techstack' fragment='Docker'><strong>Docker</strong></a>, <a routerLink='/techstack' fragment='Terraform'><strong>Terraform</strong></a>, <strong>YAML-based pipelines</strong>."
+      ]
+    },
+    {
+      "company": "Latitude Margaritaville Bar & Chill",
+      "title": "Server",
+      "dates": "June 2023 – Jan 2025",
+      "bullets": [
+        "Collaborated with kitchen staff to ensure timely order fulfillment (<strong>up to 20 hrs/week</strong>).",
+        "Delivered attentive, personalized service, boosting <strong>satisfaction</strong> and <strong>repeat visits</strong>."
+      ]
+    },
+    {
+      "company": "State Farm",
+      "companyUrl": "https://www.statefarm.com/",
+      "title": "Fullstack Software Engineer Intern",
+      "dates": "May 2022 – Aug 2022",
+      "bullets": [
+        "Developed/tested <a routerLink='/techstack' fragment='Angular'><strong>Angular</strong></a> components with <a routerLink='/techstack' fragment='CodeceptJS'><strong>Codecept</strong></a> and <a routerLink='/techstack' fragment='Jasmine'><strong>Jasmine</strong></a>; integrated with <a routerLink='/techstack' fragment='Java'><strong>Java backend</strong></a>.",
+        "Delivered <strong>new features weekly</strong>, fixed bugs, and provided <strong>production support</strong>."
+      ]
+    },
+    {
+      "company": "PipeSearch LLC",
+      "companyUrl": "https://www.pipesearch.com/",
+      "title": "Fullstack Software Engineer Intern",
+      "dates": "May 2021 – Aug 2021",
+      "bullets": [
+        "Modernized legacy systems with <a routerLink='/techstack' fragment='React'><strong>React</strong></a> and <a routerLink='/techstack' fragment='Django'><strong>Django</strong></a>, enhancing performance and usability.",
+        "Built an <strong>Excel data integration platform</strong> for supply opportunities."
+      ]
+    }
+  ],
+  "aboutMe": {
+    "paragraph": "I graduated from <a href=\"https://rpi.edu\" target=\"_blank\">Rensselaer Polytechnic Institute</a> with a <strong>B.S. in Computer Science</strong> and minors in <strong>Management</strong> and <strong>Media & Culture</strong>. My journey has taken me from <strong>modernizing legacy systems</strong> to <strong>launching new features at scale</strong>, and I value <strong>teamwork</strong>, curiosity, and making a difference through technology. Outside of coding, I enjoy playing video games, working out, and watching TV shows/movies."
+  },
+  "aboutCards": [
+    {
+      "title": "Education",
+      "items": [
+        "<strong>Rensselaer Polytechnic Institute (RPI)</strong> <span style='font-weight:400;'>— Troy, NY, May 2023</span>",
+        "<strong>Bachelor of Science</strong> in <strong>Computer Science</strong>",
+        "<strong>Minor:</strong> Management",
+        "<strong>Minor:</strong> Media & Culture",
+        "<strong>Honors:</strong>&nbsp;<span>Graduated with <strong>3.5+ GPA</strong> &mdash; <em>James A. Voorhies ’20 Scholar</em></span>"
+      ]
+    },
+    {
+      "title": "Fun Facts",
+      "items": [
+        "I am <strong>partially colorblind</strong>",
+        "Used to be a <strong>junior volunteer firefighter</strong> for 6 years",
+        "Can play <strong>viola</strong> and <strong>guitar</strong>",
+        "Played <strong>lacrosse</strong> all of my life"
+      ]
+    }
+  ]
+}

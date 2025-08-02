@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "name": "PredictChain",
+      "bullets": [
+        "<strong>Blockchain-based AI Model Marketplace</strong>",
+        "Developed a user-friendly marketplace for predictive AI models",
+        "Supported dataset uploads, model training requests, and transparent blockchain transactions",
+        "Presented at ChainScience 2023",
+        "<strong>1st place &amp; “Most Innovative Technology”</strong> at 2023 MEGA-ACE Hackathon at RPI"
+      ],
+      "links": [
+        { "label": "Scientific Paper", "url": "https://arxiv.org/pdf/2307.15168" }
+      ]
+    },
+    {
+      "name": "MIMAX",
+      "bullets": [
+        "<strong>Movie Database Website</strong> built with React",
+        "Led a team of five using Scrum and Agile methodologies",
+        "Integrated <strong>TMDb API</strong> for movie/TV data, search, ratings, and spotlights",
+        "Completed in 10 weeks"
+      ],
+      "links": [
+        { "label": "Live Website", "url": "https://sdd-mimax.netlify.app/" }
+      ]
+    },
+    {
+      "name": "Discord Utility Bot",
+      "bullets": [
+        "<strong>Custom Discord bot</strong> for server moderation and fun commands",
+        "Automated role assignment, message logging, and user engagement features",
+        "Written in <strong>JavaScript (Node.js)</strong> using discord.js",
+        "Deployed and maintained for a gaming community"
+      ],
+      "links": []
+    },
+    {
+      "name": "Tip Automation & Paycheck Predictor",
+      "bullets": [
+        "<strong>Python scripts</strong> to automate tip entry and calculations for restaurant work",
+        "Calculates averages, predicts next paycheck, and tracks daily/weekly earnings",
+        "Outputs to a Google Sheet for <strong>real-time updates and analytics</strong>",
+        "Improved accuracy and saved hours of manual entry"
+      ],
+      "links": []
+    }
+  ]
+}

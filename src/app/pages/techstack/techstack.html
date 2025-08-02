@@ -1,0 +1,10 @@
+<section class="techstack">
+  <h2 class="page-header">Tech Stack</h2>
+  <div class="techstack-cards">
+    <div class="techstack-card" *ngFor="let tech of techStack" [id]="tech.id">
+      <img [src]="getTechIconUrl(tech)" [alt]="tech.name + ' logo'" />
+      <h3>{{ tech.name }}</h3>
+      <p>{{ tech.description }}</p>
+    </div>
+  </div>
+</section>

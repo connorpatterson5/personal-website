@@ -1,0 +1,138 @@
+.work-card a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline solid #2574a9;
+  transition: color 0.15s;
+}
+.work-card a:hover {
+  color: #2574a9;
+  text-decoration: underline solid #2574a9;
+}
+
+// About Me section: make RPI link bold and black
+.about p a[href*="rpi.edu"] {
+  color: #111 !important;
+  font-weight: bold;
+  text-decoration: underline solid #111;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.about p a[href*="rpi.edu"]:hover {
+  color: #2574a9 !important;
+  text-decoration: underline solid #2574a9;
+}
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.about h2 {
+  color: #2574a9;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.about-card {
+  background: rgba(255,255,255,0.10);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(127,83,172,0.10);
+  padding: 1.5rem 2rem;
+  min-width: 250px;
+  max-width: 350px;
+  flex: 1 1 250px;
+  border: 1.5px solid rgba(255,255,255,0.13);
+  backdrop-filter: blur(8px) saturate(1.2);
+  transition: box-shadow 0.2s, transform 0.2s;
+  animation: fadeInCard 1.1s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes fadeInCard {
+  from { opacity: 0; transform: scale(0.97) translateY(30px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.about-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(127,83,172,0.18);
+  transform: translateY(-4px) scale(1.025);
+}
+.about-card h3 {
+  color: #1e824c;
+  margin-bottom: 0.5rem;
+}
+.about-card ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+.about-card li {
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+}
+.about-card p {
+  font-size: 1.1rem;
+}
+
+
+.work-experience {
+  max-width: 800px;
+  margin: 2rem auto 0 auto;
+  padding: 2rem 0 0 0;
+}
+.work-experience h2 {
+  color: #2574a9;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.work-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.work-card {
+  background: rgba(255,255,255,0.10);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(127,83,172,0.10);
+  padding: 1.5rem 2rem;
+  border-left: 6px solid #7f53ac;
+  transition: box-shadow 0.2s, transform 0.2s;
+  animation: fadeInCard 1.1s cubic-bezier(.4,0,.2,1);
+}
+.work-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(127,83,172,0.18);
+  transform: translateY(-4px) scale(1.025);
+}
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+.work-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2574a9;
+}
+.work-title {
+  display: block;
+  color: #1e824c;
+  font-size: 1.05rem;
+  margin-top: 0.2rem;
+}
+.work-dates {
+  color: #888;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 1.5rem;
+  white-space: nowrap;
+}
+.work-card ul {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+  font-size: 1.05rem;
+}
+.work-card li {
+  margin-bottom: 0.5rem;
+}

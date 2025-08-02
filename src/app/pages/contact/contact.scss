@@ -1,0 +1,36 @@
+.contact a[href^="mailto:"],
+.contact a[href*="linkedin.com"] {
+  color: #111;
+  font-weight: bold;
+  text-decoration: underline solid #111;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.contact a[href^="mailto:"]:hover,
+.contact a[href*="linkedin.com"]:hover {
+  color: #2574a9;
+  text-decoration: underline solid #2574a9;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+.contact h2 {
+  color: #2574a9;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.contact a {
+  color: #2574a9;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.contact a:hover {
+  color: #f1a9a0;
+}
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}

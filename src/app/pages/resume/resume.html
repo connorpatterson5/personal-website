@@ -1,0 +1,12 @@
+<section class="resume">
+  <h2 class="page-header">Resumé</h2>
+  <a class="resume-download" [href]="resume.downloadLink" target="_blank" rel="noopener">
+    <i class="fas fa-file-alt"></i> Download PDF
+  </a>
+  <div class="resume-cards">
+    <div class="resume-card" *ngFor="let card of resume.cards">
+      <h3>{{ card.category }}</h3>
+      <p>{{ card.items.join(', ') }}</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,100 @@
+.techstack {
+  scroll-behavior: smooth;
+}
+.techstack h2 {
+  color: #7f53ac;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+.techstack-card img[alt="Java logo"] {
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -6px;
+  margin-bottom: 18px;
+}
+.techstack-card h3 {
+  /* Move Java header up if it's after the Java logo */
+}
+.techstack-card img[alt="Java logo"] + h3 {
+  margin-top: 0;
+}
+.techstack {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+.techstack-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.techstack-card {
+  background: rgba(20, 24, 40, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(127,83,172,0.10);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  min-width: 200px;
+  max-width: 220px;
+  flex: 1 1 200px;
+  border: 1.5px solid rgba(95,251,241,0.13);
+  backdrop-filter: blur(8px) saturate(1.2);
+  transition: box-shadow 0.2s, transform 0.2s;
+  animation: fadeInCard 1.1s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f3f6fa;
+}
+.techstack-card h3 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.28);
+  margin-bottom: 0.5rem;
+}
+.techstack-card p {
+  color: #e0e6ef;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.22);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.techstack-card img {
+  max-width: 64px;
+  max-height: 64px;
+  margin-bottom: 12px;
+  object-fit: contain;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.2s;
+}
+.techstack-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(127,83,172,0.18);
+  transform: translateY(-4px) scale(1.045);
+}
+
+.techstack-card--active {
+  z-index: 2;
+  box-shadow: 0 0 0 4px #5ffbf1, 0 8px 32px 0 rgba(127,83,172,0.22);
+  transform: scale(1.09) !important;
+  transition: box-shadow 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+@keyframes fadeInCard {
+  from { opacity: 0; transform: scale(0.97) translateY(30px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}

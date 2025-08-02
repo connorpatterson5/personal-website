@@ -1,0 +1,26 @@
+<!-- Navigation Bar -->
+
+
+<nav class="navbar" aria-label="Main Navigation">
+  <div class="navbar-container">
+    <div class="navbar-logo">
+      <a routerLink="/home" class="logo-link">
+        <img class="logo-icon" src="assets/images/sunglasses.png" alt="Connor Patterson" />
+        <span class="logo-text">Connor Patterson</span>
+      </a>
+    </div>
+    <div class="navbar-links">
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/resume" routerLinkActive="active">Resumé</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+      <a routerLink="/techstack" routerLinkActive="active">Tech Stack</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>

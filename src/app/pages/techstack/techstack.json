@@ -1,0 +1,25 @@
+{
+  "techStack": [
+    {"id": "Angular", "name": "Angular", "icon": "angular/FF2D20/fff", "description": "Modern, scalable frontend framework for building dynamic web apps."},
+    {"id": "React", "name": "React", "icon": "react/61DAFB/fff", "description": "Component-based JavaScript library for building user interfaces."},
+    {"id": "Java", "name": "Java", "icon": "assets/images/java.png", "description": "Object-oriented programming language for robust backend and enterprise apps."},
+    {"id": "TypeScript", "name": "TypeScript", "icon": "typescript/3178C6/fff", "description": "Typed superset of JavaScript for robust, maintainable code."},
+    {"id": "Jasmine", "name": "Jasmine", "icon": "jasmine/8A4182/fff", "description": "Behavior-driven development framework for testing JavaScript code."},
+    {"id": "AWS", "name": "AWS", "icon": "assets/images/aws.png", "description": "Cloud platform for deploying, scaling, and securing applications."},
+    {"id": "Docker", "name": "Docker", "icon": "docker/2496ED/fff", "description": "Containerization for consistent, portable development and deployment."},
+    {"id": "JavaScript", "name": "JavaScript", "icon": "javascript/F7DF1E/fff", "description": "Versatile scripting language for web development and beyond."},
+    {"id": "Terraform", "name": "Terraform", "icon": "terraform/7B42BC/fff", "description": "Infrastructure as code tool for building, changing, and versioning infrastructure."},
+    {"id": "CodeceptJS", "name": "CodeceptJS", "icon": "codeceptjs/1B1B1B/fff", "description": "End-to-end testing framework for web apps."},
+    {"id": "Django", "name": "Django", "icon": "django/092E20/fff", "description": "High-level Python web framework for rapid development."},
+    {"id": "Python", "name": "Python", "icon": "python/3776AB/fff", "description": "High-level programming language for automation, data, and backend."},
+    {"id": "Spring", "name": "Spring", "icon": "spring/6DB33F/fff", "description": "Comprehensive framework for building Java applications."},
+    {"id": "Nodejs", "name": "Node.js", "icon": "nodedotjs/339933/fff", "description": "Event-driven backend runtime for scalable server-side applications."},
+    {"id": "Kubernetes", "name": "Kubernetes", "icon": "kubernetes/326CE5/fff", "description": "Container orchestration platform for automating deployment, scaling, and management."},
+    {"id": "PostgreSQL", "name": "PostgreSQL", "icon": "postgresql/4169E1/fff", "description": "Powerful, open source object-relational database system."},
+    {"id": "Git", "name": "Git", "icon": "git/F05032/fff", "description": "Distributed version control system for tracking code changes."},
+    {"id": "GitLab", "name": "GitLab", "icon": "gitlab/FCA121/fff", "description": "DevOps platform for source code management and CI/CD."},
+    {"id": "Insomnia", "name": "Insomnia", "icon": "insomnia/4000BF/fff", "description": "API design, debugging, and testing tool."},
+    {"id": "Snyk", "name": "Snyk", "icon": "snyk/4C4A73/fff", "description": "Security platform for finding, fixing, and monitoring vulnerabilities."},
+    {"id": "YAML", "name": "YAML", "icon": "yaml/CB171E/fff", "description": "Human-readable data serialization standard for configuration files."}
+  ]
+}
