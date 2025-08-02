@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router'
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -9,4 +9,4 @@ export const routes: Routes = [
   { path: 'contact', loadComponent: () => import('./pages/contact/contact').then(m => m.ContactComponent) },
   { path: 'techstack', loadComponent: () => import('./pages/techstack/techstack').then(m => m.TechstackComponent) },
   { path: '**', redirectTo: 'home' }
-];
+]

@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import resumeData from './resume.json';
+import { Component } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import resumeData from './resume.json'
 
 @Component({
   selector: 'app-resume',
@@ -9,5 +9,5 @@ import resumeData from './resume.json';
   styleUrl: './resume.scss'
 })
 export class ResumeComponent {
-  resume = resumeData.resume;
+  resume = resumeData.resume
 }

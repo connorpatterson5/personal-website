@@ -1,7 +1,7 @@
 
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Component, signal } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
+import { RouterLink, RouterLinkActive } from '@angular/router'
 
 @Component({
   selector: 'app-root',
@@ -10,5 +10,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('website');
+  protected readonly title = signal('website')
 }

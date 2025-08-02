@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import contactData from './contact.json';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-contact',

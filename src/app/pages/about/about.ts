@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import aboutData from './about.json';
+import { Component, OnInit } from '@angular/core'
+import { RouterModule } from '@angular/router'
+import { CommonModule } from '@angular/common'
+import aboutData from './about.json'
 
 @Component({
   selector: 'app-about',
@@ -11,10 +11,10 @@ import aboutData from './about.json';
   templateUrl: './about.html'
 })
 export class AboutComponent implements OnInit {
-  workExperience = (aboutData as any).workExperience;
-  aboutMe = (aboutData as any).aboutMe;
-  aboutCards = (aboutData as any).aboutCards;
+  workExperience = (aboutData as any).workExperience
+  aboutMe = (aboutData as any).aboutMe
+  aboutCards = (aboutData as any).aboutCards
   ngOnInit() {
-    window.scrollTo({ top: 0, behavior: 'auto' });
+    window.scrollTo({ top: 0, behavior: 'auto' })
   }
 }

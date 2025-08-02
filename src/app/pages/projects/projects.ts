@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import projectsData from './projects.json';
+import { Component } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import projectsData from './projects.json'
 
 @Component({
   selector: 'app-projects',
@@ -25,5 +25,5 @@ import projectsData from './projects.json';
   `
 })
 export class ProjectsComponent {
-  projects = (projectsData as any).projects;
+  projects = (projectsData as any).projects
 }
