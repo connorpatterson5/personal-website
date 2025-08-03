@@ -41,10 +41,12 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build -- --configuration production --base-href /personal-website/
+      - name: Copy index.html to 404.html for SPA fallback
+        run: cp ./dist/website/index.html ./dist/website/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/website/browser'
+          path: './dist/website'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
