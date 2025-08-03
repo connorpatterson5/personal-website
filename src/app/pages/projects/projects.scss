@@ -12,14 +12,15 @@
 .project-links a {
   display: inline-block;
   margin-right: 1.2rem;
-  color: #111;
+  color: #111 !important;
   font-weight: bold;
   text-decoration: underline solid #111;
   transition: color 0.15s, text-decoration-color 0.15s;
 }
+
 .project-links a:hover {
-  color: #2574a9;
-  text-decoration: underline solid #2574a9;
+  color: #2574a9 !important;
+  text-decoration: underline solid #2574a9 !important;
 }
 
 .projects {
@@ -27,6 +28,7 @@
   margin: 0 auto;
   padding: 2rem 0;
 }
+
 .projects h2 {
   color: #2574a9;
   font-size: 2rem;
