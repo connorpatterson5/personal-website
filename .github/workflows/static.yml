@@ -43,8 +43,10 @@ jobs:
         run: npm run build -- --configuration production --base-href /personal-website/
       - name: Verify build output
         run: ls -l ./dist/website/
+      - name: List dist/website/browser contents to debug
+        run: ls -l ./dist/website/browser/
       - name: Copy index.html to 404.html for SPA fallback
-        run: cp ./dist/website/index.html ./dist/website/404.html
+        run: cp ./dist/website/browser/index.html ./dist/website/browser/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
