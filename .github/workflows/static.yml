@@ -41,6 +41,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build -- --configuration production --base-href /personal-website/
+      - name: Verify build output
+        run: ls -l ./dist/website/
       - name: Copy index.html to 404.html for SPA fallback
         run: cp ./dist/website/index.html ./dist/website/404.html
       - name: Upload artifact
