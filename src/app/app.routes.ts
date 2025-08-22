@@ -15,7 +15,9 @@ export const routes: Routes = [
   {
     path: 'projects',
     loadComponent: () =>
-      import('./pages/projects/projects.component').then((m) => m.ProjectsComponent),
+      import('./pages/projects/projects.component').then(
+        (m) => m.ProjectsComponent,
+      ),
   },
   {
     path: 'resume',
@@ -25,12 +27,16 @@ export const routes: Routes = [
   {
     path: 'contact',
     loadComponent: () =>
-      import('./pages/contact/contact.component').then((m) => m.ContactComponent),
+      import('./pages/contact/contact.component').then(
+        (m) => m.ContactComponent,
+      ),
   },
   {
     path: 'techstack',
     loadComponent: () =>
-      import('./pages/techstack/techstack.component').then((m) => m.TechstackComponent),
+      import('./pages/techstack/techstack.component').then(
+        (m) => m.TechstackComponent,
+      ),
   },
   { path: '**', redirectTo: 'home' },
 ];

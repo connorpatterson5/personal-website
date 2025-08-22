@@ -26,7 +26,6 @@ const techStackData: TechstackData = techStackDataJson;
 export class TechstackComponent implements AfterViewInit {
   techStack = techStackData.techStack;
 
-  // ✅ inject ActivatedRoute here, inside class
   private route = inject(ActivatedRoute);
 
   ngAfterViewInit() {

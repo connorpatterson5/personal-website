@@ -13,20 +13,13 @@
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
-          {
-            "type": "attribute",
-            "prefix": "app",
-            "style": "camelCase"
-          }
+          { "type": "attribute", "prefix": "app", "style": "camelCase" }
         ],
         "@angular-eslint/component-selector": [
           "error",
-          {
-            "type": "element",
-            "prefix": "app",
-            "style": "kebab-case"
-          }
-        ]
+          { "type": "element", "prefix": "app", "style": "kebab-case" }
+        ],
+        "semi": ["error", "never"] // <--- add this here
       }
     },
     {
@@ -40,7 +33,7 @@
     {
       "files": ["*.spec.ts"],
       "rules": {
-        "semi": ["error", "never"]  // apply same rule to spec files
+        "semi": ["error", "never"] // apply same rule to spec files
       }
     }
   ]
