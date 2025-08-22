@@ -7,7 +7,12 @@
         <li *ngFor="let bullet of project.bullets" [innerHTML]="bullet"></li>
       </ul>
       <div class="project-links">
-        <a *ngFor="let link of project.links" [href]="link.url" target="_blank">{{ link.label }}</a>
+        <a
+          *ngFor="let link of project.links"
+          [href]="link.url"
+          target="_blank"
+          >{{ link.label }}</a
+        >
       </div>
     </div>
   </div>

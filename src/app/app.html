@@ -6,21 +6,53 @@
       </a>
     </div>
     <!-- Hamburger button shows only on mobile -->
-    <button 
-      class="navbar-hamburger" 
-      type="button" 
-      aria-label="Toggle menu" 
-      (click)="menuOpen = !menuOpen">
+    <button
+      class="navbar-hamburger"
+      type="button"
+      aria-label="Toggle menu"
+      (click)="menuOpen = !menuOpen"
+    >
       &#9776;
     </button>
     <!-- Nav links -->
     <div class="navbar-links" [class.open]="menuOpen">
-      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="menuOpen = false">Home</a>
-      <a routerLink="/about" routerLinkActive="active" (click)="menuOpen = false">About</a>
-      <a routerLink="/projects" routerLinkActive="active" (click)="menuOpen = false">Projects</a>
-      <a routerLink="/resume" routerLinkActive="active" (click)="menuOpen = false">Resumé</a>
-      <a routerLink="/contact" routerLinkActive="active" (click)="menuOpen = false">Contact</a>
-      <a routerLink="/techstack" routerLinkActive="active" (click)="menuOpen = false">Tech Stack</a>
+      <a
+        routerLink="/home"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="menuOpen = false"
+        >Home</a
+      >
+      <a
+        routerLink="/about"
+        routerLinkActive="active"
+        (click)="menuOpen = false"
+        >About</a
+      >
+      <a
+        routerLink="/projects"
+        routerLinkActive="active"
+        (click)="menuOpen = false"
+        >Projects</a
+      >
+      <a
+        routerLink="/resume"
+        routerLinkActive="active"
+        (click)="menuOpen = false"
+        >Resumé</a
+      >
+      <a
+        routerLink="/contact"
+        routerLinkActive="active"
+        (click)="menuOpen = false"
+        >Contact</a
+      >
+      <a
+        routerLink="/techstack"
+        routerLinkActive="active"
+        (click)="menuOpen = false"
+        >Tech Stack</a
+      >
     </div>
   </div>
 </nav>

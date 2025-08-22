@@ -10,7 +10,10 @@
         "<strong>1st place &amp; “Most Innovative Technology”</strong> at 2023 MEGA-ACE Hackathon at RPI"
       ],
       "links": [
-        { "label": "Scientific Paper", "url": "https://arxiv.org/pdf/2307.15168" }
+        {
+          "label": "Scientific Paper",
+          "url": "https://arxiv.org/pdf/2307.15168"
+        }
       ]
     },
     {

@@ -3,7 +3,9 @@
   color: #111;
   font-weight: bold;
   text-decoration: underline solid #111;
-  transition: color 0.15s, text-decoration-color 0.15s;
+  transition:
+    color 0.15s,
+    text-decoration-color 0.15s;
 }
 .contact a[href^="mailto:"]:hover,
 .contact a[href*="linkedin.com"]:hover {

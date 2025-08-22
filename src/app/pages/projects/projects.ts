@@ -1,29 +1,31 @@
-import { Component } from '@angular/core'
-import { CommonModule } from '@angular/common'
-import projectsData from './projects.json'
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import projectsDataJson from './projects.json';
+
+const projectsData: ProjectsData = projectsDataJson;
 
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [CommonModule],
   styleUrls: ['./projects.scss'],
-  template: `
-<section class="projects">
-  <h2 class="page-header">Featured Projects</h2>
-  <div class="project-cards">
-    <div class="project-card" *ngFor="let project of projects">
-      <h3>{{ project.name }}</h3>
-      <ul>
-        <li *ngFor="let bullet of project.bullets" [innerHTML]="bullet"></li>
-      </ul>
-      <div class="project-links">
-        <a *ngFor="let link of project.links" [href]="link.url" target="_blank">{{ link.label }}</a>
-      </div>
-    </div>
-  </div>
-</section>
-  `
+  templateUrl: './projects.html',
 })
 export class ProjectsComponent {
-  projects = (projectsData as any).projects
+  projects = projectsData.projects;
+}
+
+interface ProjectLink {
+  label: string;
+  url: string;
+}
+
+interface Project {
+  name: string;
+  bullets: string[];
+  links: ProjectLink[];
+}
+
+interface ProjectsData {
+  projects: Project[];
 }

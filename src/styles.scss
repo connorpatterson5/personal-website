@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 body {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   background: linear-gradient(135deg, #232526 0%, #5ffbf1 100%);
   margin: 0;
   min-height: 100vh;
 }
-
 
 .navbar {
   position: sticky;
@@ -16,7 +15,7 @@ body {
   backdrop-filter: blur(16px) saturate(1.5);
   box-shadow: 0 8px 32px rgba(60, 60, 180, 0.18);
   padding: 0.5rem 0;
-  border-bottom: 1.5px solid rgba(95,251,241,0.13);
+  border-bottom: 1.5px solid rgba(95, 251, 241, 0.13);
   transition: background 0.3s;
 }
 .navbar-container {
@@ -42,7 +41,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 0.5rem;
-  box-shadow: 0 2px 8px rgba(95,251,241,0.13);
+  box-shadow: 0 2px 8px rgba(95, 251, 241, 0.13);
   border: 2.5px solid #5ffbf1;
   background: #fff;
 }
@@ -60,7 +59,7 @@ body {
   font-weight: 800;
   color: #fff;
   letter-spacing: 1px;
-  text-shadow: 0 2px 8px rgba(37,116,169,0.10);
+  text-shadow: 0 2px 8px rgba(37, 116, 169, 0.1);
 }
 .navbar-links {
   display: flex;
@@ -75,25 +74,29 @@ body {
   padding: 0.2rem 0.3rem;
   transition: color 0.2s;
 }
-.navbar-links a.active, .navbar-links a:hover {
+.navbar-links a.active,
+.navbar-links a:hover {
   color: #5ffbf1;
-  background: rgba(127,83,172,0.18);
+  background: rgba(127, 83, 172, 0.18);
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(95,251,241,0.10);
+  box-shadow: 0 2px 12px rgba(95, 251, 241, 0.1);
   backdrop-filter: blur(6px) saturate(1.2);
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 .navbar-links a::after {
-  content: '';
+  content: "";
   display: block;
   height: 3px;
   width: 0;
   background: linear-gradient(90deg, #5ffbf1 0%, #7f53ac 100%);
   border-radius: 2px;
-  transition: width 0.3s cubic-bezier(.4,0,.2,1);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 3px;
 }
-.navbar-links a.active::after, .navbar-links a:hover::after {
+.navbar-links a.active::after,
+.navbar-links a:hover::after {
   width: 100%;
 }
 
@@ -102,7 +105,7 @@ body {
   margin: 2rem auto;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(37,116,169,0.08);
+  box-shadow: 0 4px 24px rgba(37, 116, 169, 0.08);
   padding: 2.5rem 2rem;
 }
 

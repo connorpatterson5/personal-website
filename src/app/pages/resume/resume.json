@@ -4,37 +4,64 @@
       {
         "category": "Programming Languages",
         "items": [
-          "TypeScript", "JavaScript", "Java", "C/C++", "Python", "HTML/CSS", "MATLAB", "PostgreSQL"
+          "TypeScript",
+          "JavaScript",
+          "Java",
+          "C/C++",
+          "Python",
+          "HTML/CSS",
+          "MATLAB",
+          "PostgreSQL"
         ]
       },
       {
         "category": "Frameworks",
-        "items": [
-          "Angular", "Spring", "React", "Django", "Node.js"
-        ]
+        "items": ["Angular", "Spring", "React", "Django", "Node.js"]
       },
       {
         "category": "DevOps",
         "items": [
-          "AWS", "GitLab CI/CD", "Snyk", "ServiceNow", "Digital.ai Agility", "YAML", "Docker", "Kubernetes", "Terraform"
+          "AWS",
+          "GitLab CI/CD",
+          "Snyk",
+          "ServiceNow",
+          "Digital.ai Agility",
+          "YAML",
+          "Docker",
+          "Kubernetes",
+          "Terraform"
         ]
       },
       {
         "category": "Developer/Testing Tools",
         "items": [
-          "Git", "GitLab", "CodeceptJS", "Jasmine", "Chrome DevTools", "Postman", "Insomnia", "Bitbucket", "Jira"
+          "Git",
+          "GitLab",
+          "CodeceptJS",
+          "Jasmine",
+          "Chrome DevTools",
+          "Postman",
+          "Insomnia",
+          "Bitbucket",
+          "Jira"
         ]
       },
       {
         "category": "Certifications",
-        "items": [
-          "AWS Certified Cloud Practitioner"
-        ]
+        "items": ["AWS Certified Cloud Practitioner"]
       },
       {
         "category": "Soft Skills",
         "items": [
-          "Highly Organized", "Multitasker", "Patient", "Problem Solver", "Quick Learner", "Self Motivated", "Strong Communication Skills", "Versatile", "Mentorship"
+          "Highly Organized",
+          "Multitasker",
+          "Patient",
+          "Problem Solver",
+          "Quick Learner",
+          "Self Motivated",
+          "Strong Communication Skills",
+          "Versatile",
+          "Mentorship"
         ]
       }
     ]
