@@ -6,13 +6,13 @@
       </a>
     </div>
     <!-- Hamburger button shows only on mobile -->
-    <button
-      class="navbar-hamburger"
-      type="button"
-      aria-label="Toggle menu"
-      (click)="menuOpen = !menuOpen"
-    >
-      &#9776;
+    <button 
+      class="navbar-hamburger" 
+      [class.open]="menuOpen" 
+      (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
     <!-- Nav links -->
     <div class="navbar-links" [class.open]="menuOpen">

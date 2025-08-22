@@ -36,6 +36,12 @@
         "plugin:@angular-eslint/template/accessibility"
       ],
       "rules": {}
+    },
+    {
+      "files": ["*.spec.ts"],
+      "rules": {
+        "semi": ["error", "never"]  // apply same rule to spec files
+      }
     }
   ]
 }
