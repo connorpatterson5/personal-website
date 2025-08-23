@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import projectsDataJson from './projects.json';
+import { Component } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import projectsDataJson from './projects.json'
 
-const projectsData: ProjectsData = projectsDataJson;
+const projectsData: ProjectsData = projectsDataJson
 
 @Component({
   selector: 'app-projects',
@@ -12,7 +12,7 @@ const projectsData: ProjectsData = projectsDataJson;
   templateUrl: './projects.html',
 })
 export class ProjectsComponent {
-  projects = projectsData.projects;
+  projects = projectsData.projects
 }
 
 interface ProjectLink {

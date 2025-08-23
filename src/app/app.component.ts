@@ -1,6 +1,6 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Component, signal } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
+import { RouterLink, RouterLinkActive } from '@angular/router'
 
 @Component({
   selector: 'app-root',
@@ -9,15 +9,18 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('website');
-  menuOpen = false;
+  protected readonly title = signal('website')
+  menuOpen = false
+
+  private originalOverflow: string | null = null
 
   toggleMenu() {
-    this.menuOpen = !this.menuOpen;
+    this.menuOpen = !this.menuOpen
     if (this.menuOpen) {
-      document.body.style.overflow = 'hidden';
+      this.originalOverflow = document.body.style.overflowY
+      document.body.style.overflowY = 'hidden'
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflowY = this.originalOverflow || 'auto'
     }
   }
 }

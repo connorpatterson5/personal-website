@@ -181,7 +181,7 @@
   .navbar-links {
     flex-direction: column;
     position: absolute;
-    top: 88% !important;
+    top: 90% !important;
     right: 0;
     width: 160px;
 
@@ -216,7 +216,9 @@
     border-radius: 0 0 12px 12px;
   }
   .navbar-container {
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 1rem;
+    flex-direction: inherit !important;
+    margin-top: 15px;
   }
   .navbar-links {
     gap: 0.3rem;
@@ -226,7 +228,11 @@
     padding: 0.35rem 0.5rem;
   }
   .logo-text {
-    font-size: 0.98rem;
+    font-size: 1.1rem;
+    margin-top: -10px;
+  }
+  .navbar-hamburger {
+    margin-top: -10px;
   }
   .logo-icon {
     width: 28px;

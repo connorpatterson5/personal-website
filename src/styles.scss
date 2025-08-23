@@ -121,12 +121,13 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .main-content {
     padding: 1rem 0.5rem;
+    max-width: 95%;
   }
   .navbar-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 0.5rem;
   }

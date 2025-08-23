@@ -36,3 +36,15 @@
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
+
+.github-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  transition: filter 0.2s ease;
+}
+
+.github-icon:hover {
+  filter: invert(30%) sepia(10%) saturate(200%) hue-rotate(0deg)
+    brightness(150%);
+}

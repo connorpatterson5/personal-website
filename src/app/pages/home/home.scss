@@ -74,3 +74,75 @@
 .hero-socials a:hover {
   color: #f1a9a0;
 }
+
+.doc-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  transition: filter 0.2s ease;
+  margin-bottom: -10px !important;
+  margin-right: 20px !important;
+}
+
+.doc-icon:hover {
+  filter: brightness(1.5) saturate(1.2) contrast(1.1);
+  transform: translateY(-2px);
+}
+
+.linkedin-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  transition: filter 0.2s ease;
+  margin-bottom: -10px !important;
+  margin-right: 20px !important;
+}
+
+.linkedin-icon:hover {
+  filter: brightness(1.5) saturate(1.2) contrast(1.1);
+  transform: translateY(-2px);
+}
+
+.github-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  transition: filter 0.2s ease;
+  margin-bottom: -10px !important;
+  margin-right: 20px !important;
+}
+
+.github-icon:hover {
+  filter: invert(30%) sepia(10%) saturate(200%) hue-rotate(0deg)
+    brightness(150%);
+  transform: translateY(-2px);
+}
+
+.steam-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  transition: filter 0.2s ease;
+  margin-bottom: -10px !important;
+  margin-right: 20px !important;
+}
+
+.steam-icon:hover {
+  filter: invert(30%) sepia(10%) saturate(200%) hue-rotate(0deg)
+    brightness(150%);
+  transform: translateY(-2px);
+}
+
+.spotify-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  transition: filter 0.2s ease;
+  margin-bottom: -10px !important;
+}
+
+.spotify-icon:hover {
+  filter: invert(30%) sepia(10%) saturate(200%) hue-rotate(0deg)
+    brightness(150%);
+  transform: translateY(-2px);
+}

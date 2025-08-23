@@ -8,4 +8,4 @@
 // import 'zone.js/plugins/zone-error'; // Included with Angular CLI
 
 /** Zone JS required by Angular itself */
-import 'zone.js'; // Included with Angular CLI
+import 'zone.js' // Included with Angular CLI
