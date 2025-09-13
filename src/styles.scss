@@ -1,10 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+
 body {
   font-family: "Montserrat", Arial, sans-serif;
   background: linear-gradient(135deg, #232526 0%, #5ffbf1 100%);
   margin: 0;
   min-height: 100vh;
+  position: relative;
+}
+
+body, .animated-bg-wrapper {
+  position: relative;
+}
+#animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+body > *:not(#animated-bg) {
+  position: relative;
+  z-index: 1;
 }
 
 .navbar {
@@ -46,7 +65,7 @@ body {
   background: #fff;
 }
 
-/* Remove circle for sunglasses.png only */
+
 .logo-icon[src$="sunglasses.png"] {
   border-radius: 0;
   box-shadow: none;

@@ -104,9 +104,19 @@
       />
     </a>
   </div>
+  <br/>
+  <div class="bg-controls">
+    <label>Density (ms between spawns)
+      <input type="range" min="10" max="75" [value]="density" (input)="updateDensity(+($event.target.value))">
+    </label>
+    <button (click)="resetAnimatedBg()">Reset</button>
+  </div>
+  <div class="animated-bg-wrapper">
+    <canvas #animatedBg id="animated-bg"></canvas>
+  </div>
 </section>
 
-<!-- Easter Egg: Console log a secret message -->
+
 <script>
   // %c is used for styling console output
   console.log(

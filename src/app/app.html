@@ -5,7 +5,7 @@
         <span class="logo-text">Connor Patterson's Website</span>
       </a>
     </div>
-    <!-- Hamburger button shows only on mobile -->
+    
     <button
       class="navbar-hamburger"
       [class.open]="menuOpen"
@@ -15,50 +15,50 @@
       <span></span>
       <span></span>
     </button>
-    <!-- Nav links -->
+    
     <div class="navbar-links" [class.open]="menuOpen">
       <a
         routerLink="/home"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
-        (click)="menuOpen = false"
+        (click)="closeMenuAndRestoreScroll()"
         >Home</a
       >
       <a
         routerLink="/about"
         routerLinkActive="active"
-        (click)="menuOpen = false"
+        (click)="closeMenuAndRestoreScroll()"
         >About</a
       >
       <a
         routerLink="/projects"
         routerLinkActive="active"
-        (click)="menuOpen = false"
+        (click)="closeMenuAndRestoreScroll()"
         >Projects</a
       >
       <a
         routerLink="/resume"
         routerLinkActive="active"
-        (click)="menuOpen = false"
+        (click)="closeMenuAndRestoreScroll()"
         >Resumé</a
       >
       <a
         routerLink="/contact"
         routerLinkActive="active"
-        (click)="menuOpen = false"
+        (click)="closeMenuAndRestoreScroll()"
         >Contact</a
       >
       <a
         routerLink="/techstack"
         routerLinkActive="active"
-        (click)="menuOpen = false"
+        (click)="closeMenuAndRestoreScroll()"
         >Tech Stack</a
       >
     </div>
   </div>
 </nav>
 
-<!-- Main Content -->
+
 <main class="main-content">
   <router-outlet></router-outlet>
 </main>

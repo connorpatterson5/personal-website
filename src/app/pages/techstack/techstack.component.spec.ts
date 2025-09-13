@@ -77,7 +77,7 @@ describe('TechstackComponent', () => {
 
     expect(component.getTechIconUrl(techLocal)).toBe('assets/test.svg')
     expect(component.getTechIconUrl(techCDN)).toBe(
-      'https://cdn.simpleicons.org/angular',
+  'https://cdn.simpleicons.org/angular',
     )
   })
 })
