@@ -22,42 +22,56 @@
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
         (click)="closeMenuAndRestoreScroll()"
-        >Home</a
+        ><span class="nav-label">Home</span></a
       >
       <a
         routerLink="/about"
         routerLinkActive="active"
         (click)="closeMenuAndRestoreScroll()"
-        >About</a
+        ><span class="nav-label">About</span></a
       >
       <a
         routerLink="/projects"
         routerLinkActive="active"
         (click)="closeMenuAndRestoreScroll()"
-        >Projects</a
+        ><span class="nav-label">Projects</span></a
       >
       <a
         routerLink="/resume"
         routerLinkActive="active"
         (click)="closeMenuAndRestoreScroll()"
-        >Resumé</a
-      >
+        data-tooltip="Resumé — Download PDF"
+        title="View Resumé / Download PDF"
+        >
+        <span class="nav-label">Resumé</span>
+        <span
+          class="nav-tooltip"
+          role="button"
+          tabindex="0"
+          aria-label="Open résumé PDF in a new tab"
+          (click)="openResumePdf($event)"
+          (keydown)="($event.key === 'Enter' || $event.key === ' ') && openResumePdf($event)"
+        >
+          Resumé — Download PDF
+        </span>
+      </a>
       <a
         routerLink="/contact"
         routerLinkActive="active"
         (click)="closeMenuAndRestoreScroll()"
-        >Contact</a
+        ><span class="nav-label">Contact</span></a
       >
       <a
         routerLink="/techstack"
         routerLinkActive="active"
         (click)="closeMenuAndRestoreScroll()"
-        >Tech Stack</a
+        ><span class="nav-label">Tech Stack</span></a
       >
     </div>
   </div>
 </nav>
 
+<app-diagonal-bg></app-diagonal-bg>
 
 <main class="main-content">
   <router-outlet></router-outlet>

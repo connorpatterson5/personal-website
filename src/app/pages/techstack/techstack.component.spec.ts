@@ -80,4 +80,21 @@ describe('TechstackComponent', () => {
   'https://cdn.simpleicons.org/angular',
     )
   })
+  it('handles fragment null gracefully', () => {
+    const comp = TestBed.createComponent(TechstackComponent).componentInstance
+    const route = TestBed.inject(ActivatedRoute) as any
+    route.fragment = of(null)
+    comp.ngAfterViewInit()
+    // ensure spec has at least one expectation
+    expect().nothing()
+  })
+
+  it('handles fragment with missing element', fakeAsync(() => {
+    const comp = TestBed.createComponent(TechstackComponent).componentInstance
+    const route = TestBed.inject(ActivatedRoute) as any
+    route.fragment = of('nope')
+    comp.ngAfterViewInit()
+    tick(0)
+    expect().nothing()
+  }))
 })

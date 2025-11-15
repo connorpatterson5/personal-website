@@ -10,18 +10,58 @@
   margin-bottom: 1.5rem;
 }
 .resume-download {
-  display: inline-block;
+  display: block;
   background: #2574a9;
   color: #fff;
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin: 1.2rem auto 2rem;
+  max-width: 260px;
+  width: auto;
   text-decoration: none;
   transition: background 0.2s;
 }
 .resume-download:hover {
   background: #1e5e8c;
+}
+/* match project link styling for keywords */
+.resume-keywords {
+  margin-top: 0.5rem;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+.resume-keywords a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #111 !important;
+  font-weight: bold;
+  text-decoration: underline solid #111;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.resume-keywords a:hover {
+  color: #2574a9 !important;
+  text-decoration: underline solid #2574a9 !important;
+}
+
+.resume-keywords .dot,
+.page.resume .page-body .dot {
+  color: #111;
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+/* resume page link and layout styles are preserved above; core attributes removed */
+
+/* also style links inside the page body (exclude resume-download) */
+.page.resume .page-body a:not(.resume-download) {
+  color: #111 !important;
+  font-weight: bold;
+  text-decoration: underline solid #111;
+}
+.page.resume .page-body a:not(.resume-download):hover {
+  color: #2574a9 !important;
+  text-decoration: underline solid #2574a9 !important;
 }
 .resume-cards {
   display: flex;

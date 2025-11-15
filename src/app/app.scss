@@ -25,6 +25,7 @@
   display: flex;
   align-items: center; /* Vertically center children */
   justify-content: space-between;
+  gap: 1.8rem; /* ensure visible spacing between logo and links */
 }
 
 /* ==========================
@@ -64,20 +65,46 @@
 .navbar-links {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .navbar-links a {
   color: #2574a9;
   font-weight: 600;
-  font-size: 1.08rem;
+  font-size: 1.02rem;
   text-decoration: none;
-  padding: 0.4rem 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  line-height: 1;
+  height: 36px;
   border-radius: 8px;
-  transition:
-    background 0.18s,
-    color 0.18s,
-    box-shadow 0.18s;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
   position: relative;
+  white-space: nowrap;
+}
+
+/* underline pseudo-element restored: transform-based for consistent sizing */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  /* center the underline and keep it within link padding */
+  left: 50%;
+  bottom: 8px;
+  width: calc(100% - 20px);
+  height: 3px;
+  background: linear-gradient(90deg, #5ffbf1 0%, #7f53ac 100%);
+  border-radius: 2px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center center;
+  transition: transform 0.22s cubic-bezier(0.2, 0, 0, 1);
+  z-index: 2;
+  pointer-events: none;
+}
+.navbar-links a.active::after,
+.navbar-links a:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .navbar-links a.active,

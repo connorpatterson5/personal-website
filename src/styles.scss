@@ -9,22 +9,6 @@ body {
   position: relative;
 }
 
-body, .animated-bg-wrapper {
-  position: relative;
-}
-#animated-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
-
-body > *:not(#animated-bg) {
-  position: relative;
-  z-index: 1;
-}
 
 .navbar {
   position: sticky;
@@ -44,6 +28,7 @@ body > *:not(#animated-bg) {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
+  gap: 1.4rem;
 }
 .navbar-logo {
   display: flex;
@@ -83,41 +68,122 @@ body > *:not(#animated-bg) {
 .navbar-links {
   display: flex;
   gap: 2.2rem;
+  align-items: center;
 }
 .navbar-links a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.02rem;
   position: relative;
-  padding: 0.2rem 0.3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 8px; /* balanced left/right padding */
+  line-height: 1;
+  height: 36px;
   transition: color 0.2s;
 }
 .navbar-links a.active,
 .navbar-links a:hover {
   color: #5ffbf1;
-  background: rgba(127, 83, 172, 0.18);
+  background: rgba(127, 83, 172, 0.14);
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(95, 251, 241, 0.1);
+  box-shadow: 0 4px 10px rgba(95, 251, 241, 0.06);
   backdrop-filter: blur(6px) saturate(1.2);
-  transition:
-    background 0.2s,
-    color 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
+
+/* underline pseudo-element for global styles */
 .navbar-links a::after {
   content: "";
-  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: calc(100% - 16px);
   height: 3px;
-  width: 0;
   background: linear-gradient(90deg, #5ffbf1 0%, #7f53ac 100%);
   border-radius: 2px;
-  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 3px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center center;
+  transition: transform 0.22s cubic-bezier(0.2, 0, 0, 1);
+  z-index: 2;
+  pointer-events: none;
+}
+.navbar-links a[data-tooltip] {
+  position: relative;
+}
+/* interactive tooltip element placed inside anchor */
+.navbar-links a .nav-tooltip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px) scale(0.92);
+  top: calc(100% + 8px);
+  background: rgba(20, 24, 40, 0.96);
+  color: #fff;
+  font-size: 0.86rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  box-shadow: 0 6px 18px rgba(7, 10, 30, 0.45);
+  z-index: 120;
+  pointer-events: auto; /* allow mouse interactions */
+}
+.navbar-links a:hover .nav-tooltip,
+.navbar-links a:focus .nav-tooltip,
+.navbar-links a .nav-tooltip:hover {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+@media (max-width: 900px) {
+  /* hide tooltips on small screens where hover isn't reliable */
+  .navbar-links a[data-tooltip]::before {
+    display: none;
+  }
 }
 .navbar-links a.active::after,
 .navbar-links a:hover::after {
-  width: 100%;
+  /* anchor underline disabled in favor of label-based underline */
+  display: none;
 }
+
+/* underline attached to the label so it sizes to text width even in stacked menu */
+.nav-label {
+  position: relative;
+  display: inline-block;
+}
+.nav-label::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #5ffbf1 0%, #7f53ac 100%);
+  border-radius: 2px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center center;
+  transition: transform 0.22s cubic-bezier(0.2, 0, 0, 1);
+  pointer-events: none;
+}
+.navbar-links a:hover .nav-label::after,
+.navbar-links a.active .nav-label::after {
+  transform: translateX(-50%) scaleX(1);
+}
+/* hide interactive tooltip on small screens / when hamburger menu is open */
+@media (max-width: 900px) {
+  .navbar-links a .nav-tooltip,
+  .navbar-links.open .nav-tooltip {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
+
+/* single centered transform-based underline above handles both desktop and mobile */
 
 .main-content {
   max-width: 900px;
@@ -152,5 +218,13 @@ body > *:not(#animated-bg) {
   }
   .navbar-links {
     gap: 0.7rem;
+  }
+}
+
+/* hide tooltips in small screens and when mobile menu is open */
+@media (max-width: 900px) {
+  .navbar-links.open .nav-tooltip,
+  .navbar-links .nav-tooltip {
+    display: none !important;
   }
 }

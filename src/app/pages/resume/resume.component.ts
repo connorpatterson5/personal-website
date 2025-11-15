@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core'
 import { CommonModule, DOCUMENT } from '@angular/common'
+import { RouterModule } from '@angular/router'
 import resumeDataJson from './resume.json'
 
 interface ResumeCard {
@@ -20,7 +21,7 @@ const resumeData: ResumeData = resumeDataJson
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './resume.html',
   styleUrls: ['./resume.scss'],
 })

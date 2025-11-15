@@ -9,9 +9,9 @@
     </h1>
     <h2>
       Full Stack Developer
-      <p style="color: black; display: inline">|</p>
+      <span style="color: black; display: inline">•</span>
       RPI Graduate
-      <p style="color: black; display: inline">|</p>
+      <span style="color: black; display: inline">•</span>
       Problem Solver
     </h2>
     <p>
@@ -105,15 +105,7 @@
     </a>
   </div>
   <br/>
-  <div class="bg-controls">
-    <label>Density (ms between spawns)
-      <input type="range" min="10" max="75" [value]="density" (input)="updateDensity(+($event.target.value))">
-    </label>
-    <button (click)="resetAnimatedBg()">Reset</button>
-  </div>
-  <div class="animated-bg-wrapper">
-    <canvas #animatedBg id="animated-bg"></canvas>
-  </div>
+  <!-- bg-controls removed; background is handled by DiagonalBgComponent -->
 </section>
 
 
